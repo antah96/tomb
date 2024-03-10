@@ -6,7 +6,6 @@ import java.io.IOException;
 public class TempFileExample {
 
     public static void main(String[] args) {
-        String fileName = "temp.txt";
 
         try {
             File temp = File.createTempFile("temp", ".txt");
