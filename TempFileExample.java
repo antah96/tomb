@@ -12,7 +12,7 @@ public class TempFileExample {
             temp.deleteOnExit();
 
             BufferedWriter out = new BufferedWriter(new FileWriter(temp));
-            out.write("aString");
+            out.write("aStringф");
             out.close();
         } 
 		catch (IOException e) {
