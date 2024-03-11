@@ -12,10 +12,12 @@ public class TempFileExample {
             temp.deleteOnExit();
 
             BufferedWriter out = new BufferedWriter(new FileWriter(temp));
-            out.write("aStringф");
+            out.write("aString");
             out.close();
-        } 
-		catch (IOException e) {
+
+            System.out.println("Temporary file created with insecure permissions. Now an attacker can perform malicious actions using the file.");
+        } catch (IOException e) {
+            System.err.println("Failed to create temporary file: " + e.getMessage());
         }
     }
 }
